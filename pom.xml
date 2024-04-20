@@ -15,6 +15,7 @@
     <modules>
         <module>ProductService</module>
 		<module>OrderService</module>
+		<module>InventoryService</module>
 	</modules>
 
     <properties>
@@ -25,6 +26,11 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

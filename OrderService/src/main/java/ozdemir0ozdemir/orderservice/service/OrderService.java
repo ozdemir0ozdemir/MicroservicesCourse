@@ -2,6 +2,7 @@ package ozdemir0ozdemir.orderservice.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ozdemir0ozdemir.orderservice.dto.OrderLineItemsDto;
 import ozdemir0ozdemir.orderservice.dto.OrderRequest;
 import ozdemir0ozdemir.orderservice.dto.OrderResponse;
@@ -14,6 +15,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class OrderService {
 
     private final OrderRepository orderRepository;
